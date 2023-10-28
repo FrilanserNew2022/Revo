@@ -61,6 +61,7 @@ ul li {
 .-title {
     color: #415167;
     font-family: 'Montserrat';
+    text-align: center;
     font-size: 1.875em;
     font-weight: 900;
     line-height: 113.333%; /* 34px */
@@ -69,6 +70,7 @@ ul li {
 .-title-element {
     color: #232C38;
     font-family: 'Nunito';
+    text-align: center;
     font-size: 1.5em;
     font-weight: 700;
     line-height: 116.667%; /* 28px */
@@ -80,6 +82,15 @@ ul li {
     font-family: 'Nunito';
     font-size: 1.5em;
     font-weight: 300;
+}
+
+@media (max-width: 1023px) {
+    .-title-element {
+        font-size: 1.25em;
+    }
+    .-text-element {
+        font-size: 1.25em;
+    }
 }
 
 .-price {
