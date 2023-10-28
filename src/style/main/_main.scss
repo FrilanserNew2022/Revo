@@ -1,0 +1,128 @@
+.page__main {
+    height: 768px;
+    max-height: 100vh;
+    padding-right: 330px;
+    z-index: 2;
+}
+.main__container {
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding-right: 0;
+}
+.main__content {
+    padding: 75px 85px 65px 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 16.347%;
+    justify-content: space-between;
+
+    position: relative;
+}
+.main__content-logo {
+    max-width: 110px;
+}
+.main__content-title {
+    color: #415167;
+    font-family: 'Montserrat';
+    font-size: 3.375em;
+    font-weight: 900;
+    line-height: 129.63%; /* 70px */
+
+    transform: translate(0, 100%);
+    position: absolute;
+    z-index: 3;
+}
+.main__personalized {
+    padding: 5px;
+    color: #F9FBFF;
+    background-color: $AccentColor;
+}
+.main__video-container {
+    right: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 58%;
+
+    position: relative;
+}
+.video {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: top center;
+}
+
+@media (max-width: 1279.98px) {
+    .main__content-title {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 1023.98px) {
+    .page__main {
+        height: 100vh;
+    }
+    .main__container {
+        flex-direction: column;
+    }
+    .-container {
+    }
+    .main__content {
+        padding: 50px 0 0 0;
+        width: auto;
+        margin-left: 0;
+    }
+    .main__content-logo {
+    }
+    .main__content-title {
+        position: relative;
+        font-size: 1.75em;
+        max-width: 245px;
+        transform: translate(0, 0);
+        z-index: 1;
+    }
+    .main__personalized {
+
+    }
+    .main__video-container {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+    }
+    .video {
+
+    }
+}
+
+@media (max-width: 767.98px) {
+    .page__main {
+        padding: 0;
+    }
+    .main__container {
+        padding: 15px 20px;
+    }
+}
+
+@media (min-height: 769px) {
+    .page__main {
+        height: 768px;
+    }
+}
+
+@media (max-height: 500px) {
+    .page__main {
+        height: 500px;
+      max-height: 100%;  
+    }
+    .main__content {
+        padding-top: 10px;
+    }
+}
