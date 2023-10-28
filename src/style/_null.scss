@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    background: #F9FBFF;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #FFF;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+/*------------------------------------------------------------------------------------------------------------------ */
+
+.-container {
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.-subtitle {
+    color: #415167;
+    text-align: center;
+    font-family: 'Nunito';
+    font-size: 1.25em;
+    font-weight: 600;
+    line-height: 120%; /* 24px */
+}
+
+.-title {
+    color: #415167;
+    font-family: 'Montserrat';
+    font-size: 1.875em;
+    font-weight: 900;
+    line-height: 113.333%; /* 34px */
+}
+
+.-title-element {
+    color: #232C38;
+    font-family: 'Nunito';
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 116.667%; /* 28px */
+}
+
+.-text-element {
+    color: #151D28;
+    text-align: center;
+    font-family: 'Nunito';
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.-price {
+    color: #C7A17A;
+    font-family: 'Nunito';
+    font-size: 1.25em;
+    font-weight: 600;
+    line-height: 120%; /* 24px */
+}
+
+.-buy-button {
+    color: #F9FBFF;
+    text-align: center;
+    font-family: 'Nunito';
+    font-size: 1em;
+    font-weight: 700;
+
+    padding: 12px 32px;
+    border-radius: 20px;
+    background: #C7A17A;
+}
+
+.-detailes {
+    color: #415167;
+    font-family: 'Nunito';
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.-crossed-out-price {
+    color: #415167;
+    font-family: 'Nunito';
+    font-size: 0.875em;
+    font-style: italic;
+    font-weight: 300;
+    text-decoration-line: strikethrough;
+}
+
+/*------------------------------------------------------------------------------------------------------------------ */
+
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
