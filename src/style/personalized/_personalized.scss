@@ -1,0 +1,140 @@
+.page__personalized {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    background: #F9FBFF;
+}
+
+.personalized__background {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    height: 100%;
+    width: 23.15%;
+
+    background: $PrimaryColor;
+}
+.personalized__container {
+    padding-top: 90px;
+    padding-bottom: 130px;
+
+}
+.personalized__text {
+    margin-bottom: 64px;
+}
+.personalized__text-subtitle {
+    margin-bottom: 6px;
+}
+.personalized__content {
+    overflow: hidden;
+    position: relative;
+}
+
+.personalized__content-back {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    height: 100%;
+    width: 190px;
+
+    background-color: #F9FBFF;
+    opacity: 0.4;
+}
+
+.personalized__content-list {
+    position: relative;
+    display: flex;
+}
+.personalized__list {
+}
+.personalized__list-item {
+    margin-right: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    border: rgba(0, 0, 0, 0.2) 1px solid;
+
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+.personalized__item-img {
+    width: 349px;
+    height: 349px;
+
+    background: lightgray 0px 0px / 100% 100% no-repeat;
+}
+.personalized__item-content {
+    flex: 1 1 auto;
+
+    padding: 42px;
+
+    background-color: #FFF;
+}
+.personalized__item-priceblock {
+    display: flex;
+    align-items: center;
+}
+.personalized__item-price {
+    margin-right: 10px;
+}
+.personalized__item-crossedprice {
+}
+.-crossed-out-price {
+}
+.personalized__item-title {
+    text-align: left;
+}
+.personalized__item-text {
+    text-align: left;
+}
+.personalized__item-buttons {
+    margin-top: 40px;
+
+    display: flex;
+    align-items: center;
+}
+.personalized__button {
+}
+.personalized__button-buy {
+    margin-right: 80px;
+}
+.-buy-button {
+}
+.personalized__button-detailes {
+}
+.-detailes {
+}
+
+.personalized__list-arrow {
+    cursor: pointer;
+    position: absolute;
+
+    top: 50%;
+    right: 0;
+}
+
+@media (max-width: 767px) {
+    .personalized__container {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .personalized__text {
+        padding: 0 60px;
+    }
+    .personalized__item-img {
+        width: 200px;
+        height: 200px;
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .personalized__item-content {
+        padding: 10px;
+    }
+}

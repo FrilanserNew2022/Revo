@@ -61,11 +61,18 @@
 }
 
 .header__item-link {
-    color: #EDF0F5;
+    color: #edf0f5a7;
     font-family: Nunito;
     font-size: 1em;
     font-weight: 300;
     line-height: 150%; /* 24px */
+
+    transition: all 0.5s;
+
+    text-transform: uppercase;
+    &:hover {
+        color: #EDF0F5;
+    }
 }
 
 .header__item-link:hover {
