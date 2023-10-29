@@ -13,8 +13,8 @@
 }
 
 .header__container {
+    max-width: 100%;
     width: 100%;
-    max-width: 1470px;
     height: 100%;
     padding: 0;
 
@@ -31,7 +31,7 @@
 
 .header__menu {
     width: 100%;
-    max-width: 330px;
+    max-width: 33%;
     height: 100%;
     padding: 0 15px 0 55px;
     display: flex;
@@ -84,6 +84,9 @@
 @media (max-width: 1023.98px) {
     .header {
         height: 100vh;
+    }
+    .header__menu {
+        max-width: 330px;
     }
 }
 
