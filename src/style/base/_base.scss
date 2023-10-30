@@ -1,6 +1,6 @@
 .page__base {
 }
-.base {
+.base.hidden {
 }
 
 .base__container {
@@ -15,7 +15,17 @@
 }
 .base__description {
     margin-top: 8.109%;
+    opacity: 1;
+    transition: 
+        transform 1.5s,
+        opacity 1.5s;
 }
+
+.base__description.hidden {
+    opacity: 0;
+    transform: translate(-500px, 0);
+}
+
 .base__list {
     display: flex;
     align-items: center;

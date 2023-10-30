@@ -74,14 +74,20 @@
                             </div>
                             <h1 class="main__content-title">
                                 YOUR 
-                                <div class="main__personalized">
+                                <div class="main__personalize">
                                     PERSONALIZED  
                                 </div>
                                 COFFEE
                             </h1>
                         </div>
                         <div class="main__video-container">
-                            <video class="video" src="./img/coffe-video/coffee-720.mp4"></video>
+                            <video class="video" preload="auto" muted autoplay playsinline loop>
+                                <source src="img/coffe-video/coffee-720.mp4" type="video/mp4">
+                                <source src="img/coffe-video/coffee-720.mov" type="video/mov">
+                                <source src="img/coffe-video/coffee-720.webm" type="video/webm">
+                                <source src="img/coffe-video/coffee-720.h264" type="video/h264">
+                            </video>
+                            <div class="video__play play"></div>
                         </div>
                     </div>
                 </div>
@@ -95,7 +101,7 @@
                                 COFFEE BUILD YOUR BASE
                             </div>
                         </div>
-                        <div class="base__description">
+                        <div class="base__description hidden">
                             <ul class="base__list">
 
                                 <li class="base__list-item base__item">
@@ -166,9 +172,9 @@
                                 TRUE GOOD STANDARD
                             </div>
                         </div>
-                        <div class="standart__content">
+                        <div class="standart__content hidden">
                             <ul class="standart__content-list-top standart__list-top standart__list">
-                                <li class="standart__list-item standart__item standart__item-first-top">
+                                <li class="standart__list-item standart__item standart__item-first standart__item-first-top">
                                     <div class="standart__item-images">
                                         <img src="./img/favorit/morning.png" alt="coffe">
                                     </div>
@@ -192,7 +198,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="standart__list-item standart__item standart__item-second-top">
+                                <li class="standart__list-item standart__item standart__item-second standart__item-second-top">
                                     <div class="standart__item-images">
                                         <img src="./img/favorit/everyday.png" alt="coffe">
                                     </div>
@@ -216,7 +222,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="standart__list-item standart__item standart__item-third-top">
+                                <li class="standart__list-item standart__item standart__item-third standart__item-third-top">
                                     <div class="standart__item-images">
                                         <img src="./img/favorit/honey.png" alt="coffe">
                                     </div>
@@ -247,7 +253,7 @@
                                 </a>
                             </div>
                             <ul class="standart__content-list-bottom standart__list-bottom standart__list">
-                                <li class="standart__list-item standart__item standart__item-first-bottom">
+                                <li class="standart__list-item standart__item standart__item-first standart__item-first-bottom">
                                     <div class="standart__item-images">
                                         <img src="./img/favorit/honey.png" alt="coffe">
                                     </div>
@@ -271,7 +277,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="standart__list-item standart__item standart__item-second-bottom">
+                                <li class="standart__list-item standart__item standart__item-second standart__item-second-bottom">
                                     <div class="standart__item-images">
                                         <img src="./img/favorit/fatty.png" alt="coffe">
                                     </div>
@@ -295,7 +301,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="standart__list-item standart__item standart__item-third-bottom">
+                                <li class="standart__list-item standart__item standart__item-third standart__item-third-bottom">
                                     <div class="standart__item-images">
                                         <img src="./img/favorit/natural.png" alt="coffe">
                                     </div>
@@ -334,16 +340,16 @@
                                 GIFTSET
                             </div>
                         </div>
-                        <div class="giftset__container-content">
+                        <div class="giftset__container-content hidden">
                             <div class="giftset__container-img">
                                 <img src="./img/giftset/origin.png" alt="origin Revo">
                             </div>
-                            <div class="giftset__content">
+                            <div class="giftset__content giftset__content-first">
                                 <div class="giftset__content-price -price">
                                     285.000
                                 </div>
                                 <div class="giftset__content-title -title-element">
-                                    Giftset "Vietnamese filter coffee"
+                                    Giftset "Vietnamese filter"
                                 </div>
                                 <div class="giftset__content-text -text-element">
                                     Great gift for coffee connoisseurs. Coffee beans are carefully selected and roasted by Revo using technology and know-how learned from famous artisans, along with the love and passion of the coffee maker... creating cups of pure coffee only. just for you.
@@ -386,14 +392,110 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="giftset__content giftset__content-second hidden">
+                                <div class="giftset__content-price -price">
+                                    300.000
+                                </div>
+                                <div class="giftset__content-title -title-element">
+                                    Giftset "Second block coffe"
+                                </div>
+                                <div class="giftset__content-text -text-element">
+                                    Second giftset Great gift for coffee. Coffee beans are carefully selected and roasted by Revo using technology and know-how learned from famous artisans, along with the love and passion of the coffee maker... creating cups of pure coffee only. just for you.
+                                </div>
+                                <div class="giftset__content-icons giftset__icons">
+                                    <div class="giftset__icons-beans beans giftset__icon">
+                                        <div class="beans__icon">
+                                            <img src="./img/icon/giftset-icon/coffee-beans.svg" alt="beans">
+                                        </div>
+                                        <div class="beans__container">
+                                            <div class="beans__container-text -text-element giftset__icons-text">
+                                                Seed type
+                                            </div>
+                                            <div class="beans__container-title -title-element giftset__icons-title">
+                                                Fine Robusta Blend
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="giftset__icons-mountain mountain giftset__icon">
+                                        <div class="mountain__icon">
+                                            <img src="./img/icon/giftset-icon/coffe-mountain.svg" alt="mountain">
+                                        </div>
+                                        <div class="mountain__container">
+                                            <div class="mountain__container-text -text-element giftset__icons-text">
+                                                Height
+                                            </div>
+                                            <div class="mountain__container-title -title-element giftset__icons-title">
+                                                900 - 1200m
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="giftset__content-buttons giftset__buttons">
+                                    <div class="giftset__buttons-buy -buy-button">
+                                        BUY
+                                    </div>
+                                    <div class="giftset__buttons-detailes -detailes">
+                                        detailes
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="giftset__content giftset__content-third hidden">
+                                <div class="giftset__content-price -price">
+                                    330.000
+                                </div>
+                                <div class="giftset__content-title -title-element">
+                                    Giftset "Third giftset block"
+                                </div>
+                                <div class="giftset__content-text -text-element">
+                                    Third giftset block Great gift for coffee. Coffee beans are carefully selected and roasted by Revo using technology and know-how learned from famous artisans, along with the love and passion of the coffee maker... creating cups of pure coffee only. just for you.
+                                </div>
+                                <div class="giftset__content-icons giftset__icons">
+                                    <div class="giftset__icons-beans beans giftset__icon">
+                                        <div class="beans__icon">
+                                            <img src="./img/icon/giftset-icon/coffee-beans.svg" alt="beans">
+                                        </div>
+                                        <div class="beans__container">
+                                            <div class="beans__container-text -text-element giftset__icons-text">
+                                                Seed type
+                                            </div>
+                                            <div class="beans__container-title -title-element giftset__icons-title">
+                                                Fine Robusta Blend
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="giftset__icons-mountain mountain giftset__icon">
+                                        <div class="mountain__icon">
+                                            <img src="./img/icon/giftset-icon/coffe-mountain.svg" alt="mountain">
+                                        </div>
+                                        <div class="mountain__container">
+                                            <div class="mountain__container-text -text-element giftset__icons-text">
+                                                Height
+                                            </div>
+                                            <div class="mountain__container-title -title-element giftset__icons-title">
+                                                1200 - 1500m
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="giftset__content-buttons giftset__buttons">
+                                    <div class="giftset__buttons-buy -buy-button">
+                                        BUY
+                                    </div>
+                                    <div class="giftset__buttons-detailes -detailes">
+                                        detailes
+                                    </div>
+                                </div>
+                            </div>
                             <div class="giftset__numbers">
-                                <div class="giftset__numbers-first giftset__number">
+                                <div class="giftset__numbers-first giftset__number first active">
                                     1
                                 </div>
-                                <div class="giftset__numbers-second giftset__number">
+                                <div class="giftset__numbers-second giftset__number second">
                                     2
                                 </div>
-                                <div class="giftset__numbers-third giftset__number">
+                                <div class="giftset__numbers-third giftset__number third">
                                     3
                                 </div>
                             </div>
@@ -411,7 +513,7 @@
                                 COFFEE COMBO
                             </div>
                         </div>
-                        <div class="personalized__content">
+                        <div class="personalized__content hidden">
 
                             <div class="personalized__content-back">
 
@@ -551,12 +653,12 @@
                                     </div>
                                 </li>
 
-
-                                <div class="personalized__list-arrow">
-                                    <img src="./img/icon/arrow/arrow-next.png" alt="arrow">
-                                </div>
-
                             </ul>
+
+                            <div class="personalized__list-arrow">
+                                <img src="./img/icon/arrow/arrow-next.png" alt="arrow">
+                            </div>
+
                         </div>
                     </div>
                 </div>

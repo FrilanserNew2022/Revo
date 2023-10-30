@@ -22,7 +22,7 @@ entry: ['@babel/polyfill',path.resolve(__dirname, 'src', 'index.js')],
     output: {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
-        filename: 'index.[contenthash].js',
+        filename: 'index.js',
         assetModuleFilename: 'assets/[name][ext]'
     },
     plugins: [
@@ -30,7 +30,7 @@ entry: ['@babel/polyfill',path.resolve(__dirname, 'src', 'index.js')],
         template: path.resolve(__dirname, 'src', 'index.html')
     }),
     new MiniCssExtractPlugin({
-        filename: 'index.[contenthash].css'
+        filename: 'index.css'
     })
     ],
     module: {

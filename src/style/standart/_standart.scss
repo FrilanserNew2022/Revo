@@ -43,24 +43,23 @@
 }
 .standart__content {
     margin-top: 72px;
-    position: relative;
 
     overflow: hidden;
 
-    &::after {
-        content: '';
-        position: absolute;
+    transform: translate(0, 0);
+    opacity: 1;
 
-        top: 0;
-        right: 0;
-
-        height: 100%;
-        width: 125px;
-
-        background-color: $LightGray;
-        opacity: 0.5;
-    }
+    transition: 
+        transform 1.5s,
+        opacity 1.5s;
 }
+
+.standart__content.hidden {
+    height: 544px;
+    opacity: 0;
+    transform: translate(1000px, 0);
+}
+
 .standart__content-list-top {
 
 }
@@ -70,8 +69,11 @@
 }
 
 .standart__list {
+    height: 256px;
     display: flex;
     position: relative;
+
+    transition: all 1s;
 }
 
 .standart__list-top {
@@ -80,52 +82,30 @@
 }
 
 .standart__item {
+    position: absolute;
+
     display: flex;
     align-items: center;
 
-    width: 560px;
+    width: 100%;
+    max-width: 600px;
     height: 256px;
 
     margin-right: 30px;
     
     box-shadow: 0px 4px 24px 0px rgba(205, 205, 205, 0.50);
+
+    transition: all 1s;
 }
 
-//Top
-.standart__item-first-top {
-
+.standart__item-second {
+    transform: translate(630px, 0);
 }
 
-.standart__item-second-top {
-    
+.standart__item-third {
+    transform: translate(1260px, 0);
 }
 
-.standart__item-third-top {
-    position: absolute;
-    
-    top: 0;
-    left: 0;
-
-    margin-left: 1180px;
-}
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-//Bottom
-.standart__item-first-bottom {
-
-}
-
-
-
-.standart__item-third-bottom {
-    position: absolute;
-
-    top: 0;
-    left: 0;
-
-    margin-left: 1180px;
-}
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -143,13 +123,13 @@
     height: 100%;
 
     background-color: #FFFFFF;
-    padding-top: 42px;
-    padding-bottom: 50px;
-    padding-left: 42px;
+    padding: 42px;
     box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
+
+transform: translate();
 }
 .standart__item-price {
     margin-bottom: 5px;
@@ -162,10 +142,10 @@
 }
 .standart__item-text {
     text-align: start;
-    flex: 1 1 auto
+    flex: 1 1 auto;
 }
 .standart__item-buttons {
-    margin-top: 40px;
+    display: flex;
 }
 .standart__buy {
     margin-right: 44px;
@@ -207,22 +187,6 @@
 }
 
 @media (max-width: 1279px) {
-    .standart__item-second-bottom {
-        position: absolute;
-
-        top: 0;
-        left: 0;
-
-        margin-left: 590px;
-    }
-    .standart__item-second-top {
-        position: absolute;
-
-        top: 0;
-        left: 0;
-
-        margin-left: 590px;
-    }
     .standart__content {
         &::after {
             width: 75px;
@@ -231,6 +195,9 @@
 }
 
 @media (max-width: 767px) {
+    .standart__list {
+        height: 175px;
+    }
     .standart__container {
         padding-top: 40px;
         padding-bottom: 60px;
@@ -242,6 +209,7 @@
         top: 168px;
     }
     .standart__item {
+        max-width: 400px;
         max-height: 175px;
     }
     .standart__item-content {
@@ -266,10 +234,5 @@
     }
     .standart__item-buttons {
         margin-top: 10px;
-    }
-    .standart__content {
-        &::after {
-            width: 40px;
-        }
     }
 }

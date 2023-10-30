@@ -160,11 +160,12 @@ ul li {
 
 @media (max-width: 767px) {
     .-buy-button {
-        padding: 6px 16px;
+        padding: 6px 21px;
         font-size: 0.75em;
     }
     .-detailes {
         font-size: 0.75em;
+        padding: 0;
     }
 }
 
@@ -183,4 +184,6 @@ ul li {
     position: relative;
     min-height: 100vh;
     width: 100%;
+
+    overflow: hidden;
 }
